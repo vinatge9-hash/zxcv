@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Shore Coffee - About Us</title>
+  <meta name='description' content='Learn the Shore Coffee story, values, and people behind the cozy cafe.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='opacity-0 transition-opacity duration-700' onload='this.classList.add("opacity-100");'>
+  <header class='fixed w-full z-40'>
+    <nav class='max-w-6xl mx-auto px-4 py-4 bg-black/20 backdrop-blur bg-black/20'>
+      <div class='flex items-center justify-between'>
+        <a href='index.html' class='text-white font-bold text-xl'>Shore Coffee</a>
+        <button id='nav-toggle' aria-label='Toggle menu' class='md:hidden relative w-9 h-9'>
+          <span class='block w-8 h-0.5 bg-white rounded-sm transition-all duration-300'></span>
+          <span class='block w-8 h-0.5 bg-white rounded-sm mt-2 transition-all duration-300'></span>
+          <span class='block w-8 h-0.5 bg-white rounded-sm mt-2 transition-all duration-300'></span>
+        </button>
+        <ul class='hidden md:flex space-x-6 text-white'>
+          <li><a href='index.html' class='transition-all duration-300 ease-in-out hover:brightness-125'>Home</a></li>
+          <li><a href='menu.html' class='transition-all duration-300 ease-in-out hover:brightness-125'>Menu</a></li>
+          <li><a href='about.html' class='transition-all duration-300 ease-in-out hover:brightness-125'>About</a></li>
+          <li><a href='contact.html' class='transition-all duration-300 ease-in-out hover:brightness-125'>Contact</a></li>
+        </ul>
+      </div>
+      <div id='mobile-menu' class='md:hidden hidden bg-black/70 text-white rounded-lg mt-2'>
+        <ul class='flex flex-col p-4 space-y-2'>
+          <li><a href='index.html' class='block p-2 rounded transition-all duration-300'>Home</a></li>
+          <li><a href='menu.html' class='block p-2 rounded transition-all duration-300'>Menu</a></li>
+          <li><a href='about.html' class='block p-2 rounded transition-all duration-300'>About</a></li>
+          <li><a href='contact.html' class='block p-2 rounded transition-all duration-300'>Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class='pt-24'>
+    <!-- Page Hero / Title -->
+    <section class='relative min-h-40 flex items-center justify-center'>
+      <div class='text-center px-4'>
+        <span class='inline-block px-3 py-1 rounded-full bg-rose-100 text-rose-700 text-sm mb-4'>Our Story</span>
+        <h1 class='text-3xl md:text-4xl font-bold mb-2'>Shore Coffee</h1>
+        <p class='text-gray-600'>From a simple idea of warm smiles and good coffee, Shore Coffee grew into a neighborhood haven in Hyderabad.</p>
+      </div>
+    </section>
+
+    <section class='max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-8'>
+      <article class='bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:scale-[1.03]'>
+        <h2 class='text-xl font-semibold mb-2'>Our Values</h2>
+        <ul class='list-disc pl-5 space-y-2 text-gray-700'>
+          <li>Warm hospitality and community-first spirit.</li>
+          <li>Slow coffee crafted with care and quality ingredients.</li>
+          <li>Sustainable sourcing from local partners.</li>
+        </ul>
+      </article>
+      <article class='bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:scale-[1.03]'>
+        <h2 class='text-xl font-semibold mb-2'>Our People</h2>
+        <p class='text-gray-700'>Meet the Shore crew — baristas who greet you by name and remember your favorite drink.</p>
+        <img src="https://images.unsplash.com/photo-1713624107791-6b01bfb08929?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwyfHxwb3J0cmFpdCUyMG9mJTIwZnJpZW5kbHklMjBiYXJpc3RhcyUyMGluJTIwYSUyMGNvenklMjBjYWZlfGVufDB8MHx8fDE3NTg0NzA2MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt='Portrait of friendly baristas in a cozy cafe' class='mt-3 w-full rounded'>
+      </article>
+    </section>
+  </main>
+
+  <footer class='bg-gray-900 text-gray-200'>
+    <div class='max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8'>
+      <section aria-label='Brand & socials'>
+        <h3 class='text-xl font-semibold mb-2'>Shore Coffee</h3>
+        <p class='text-sm text-gray-400'>Cozy café by the sea with hand-crafted brews.</p>
+        <div class='flex space-x-3 mt-3'>
+          <a href='#' class='hover:brightness-110 transition-all duration-300'>IG</a>
+          <a href='#' class='hover:brightness-110 transition-all duration-300'>FB</a>
+          <a href='#' class='hover:brightness-110 transition-all duration-300'>X</a>
+        </div>
+      </section>
+      <section aria-label='Quick Links'>
+        <h4 class='font-semibold mb-2'>Quick Links</h4>
+        <ul class='space-y-2'>
+          <li><a href='index.html' class='transition-all duration-300 hover:brightness-110'>Home</a></li>
+          <li><a href='menu.html' class='transition-all duration-300 hover:brightness-110'>Menu</a></li>
+          <li><a href='about.html' class='transition-all duration-300 hover:brightness-110'>About</a></li>
+          <li><a href='contact.html' class='transition-all duration-300 hover:brightness-110'>Contact</a></li>
+        </ul>
+      </section>
+      <section aria-label='Newsletter'>
+        <h4 class='font-semibold mb-2'>Newsletter</h4>
+        <p class='text-sm text-gray-400'>Get updates on new brews and events.</p>
+        <form class='flex mt-2'>
+          <input type='email' placeholder='Your email' class='bg-white/10 border border-white rounded-l px-3 py-2 w-full text-white'>
+          <button class='bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-r transition-all duration-300'>Go</button>
+        </form>
+      </section>
+    </div>
+    <hr class='border-gray-700'>
+    <p class='text-center text-sm py-3'>© 2025 Shore Coffee. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('mobile-menu');
+    if (toggle && menu) { toggle.addEventListener('click', () => { menu.classList.toggle('hidden'); }); }
+    const sections = document.querySelectorAll('section');
+    sections.forEach(s => { s.style.opacity = '0'; s.style.transform = 'translateY(20px)'; s.style.transition = 'all 0.6s ease-in-out'; });
+    const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) e.target.style.opacity = '1'; }); }, { threshold: 0.1 });
+    sections.forEach(s => obs.observe(s));
+  </script>
+</body>
+</html>
