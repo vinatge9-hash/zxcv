@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Shore Coffee - Menu</title>
+  <meta name='description' content='Explore Shore Coffee menu with cozy drinks and pastries.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='opacity-0 transition-opacity duration-700' onload='this.classList.add("opacity-100");'>
+  <header class='fixed w-full z-40'>
+    <nav class='max-w-6xl mx-auto px-4 py-4 bg-black/20 backdrop-blur bg-black/20'>
+      <div class='flex items-center justify-between'>
+        <a href='index.html' class='text-white font-bold text-xl'>Shore Coffee</a>
+        <button id='nav-toggle' aria-label='Toggle menu' class='md:hidden relative w-9 h-9'>
+          <span class='block w-8 h-0.5 bg-white rounded-sm transition-all duration-300'></span>
+          <span class='block w-8 h-0.5 bg-white rounded-sm mt-2 transition-all duration-300'></span>
+          <span class='block w-8 h-0.5 bg-white rounded-sm mt-2 transition-all duration-300'></span>
+        </button>
+        <ul class='hidden md:flex space-x-6 text-white'>
+          <li><a href='index.html' class='transition-all duration-300 ease-in-out hover:brightness-125'>Home</a></li>
+          <li><a href='menu.html' class='transition-all duration-300 ease-in-out hover:brightness-125'>Menu</a></li>
+          <li><a href='about.html' class='transition-all duration-300 ease-in-out hover:brightness-125'>About</a></li>
+          <li><a href='contact.html' class='transition-all duration-300 ease-in-out hover:brightness-125'>Contact</a></li>
+        </ul>
+      </div>
+      <div id='mobile-menu' class='md:hidden hidden bg-black/70 text-white rounded-lg mt-2'>
+        <ul class='flex flex-col p-4 space-y-2'>
+          <li><a href='index.html' class='block p-2 rounded transition-all duration-300'>Home</a></li>
+          <li><a href='menu.html' class='block p-2 rounded transition-all duration-300'>Menu</a></li>
+          <li><a href='about.html' class='block p-2 rounded transition-all duration-300'>About</a></li>
+          <li><a href='contact.html' class='block p-2 rounded transition-all duration-300'>Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class='pt-20'>
+    <!-- Hero-like intro for Menu (no conflicting h1 on this page's main content) -->
+    <section class='relative min-h-40 flex items-center justify-center'>
+      <div class='text-center px-4'>
+        <h1 class='text-3xl md:text-4xl font-bold'>Our Menu</h1>
+        <p class='mt-2 text-gray-600'>Delicious drinks and pastries crafted with care.</p>
+      </div>
+    </section>
+
+    <section class='max-w-6xl mx-auto px-4 py-12'>
+      <!-- Drip Coffee -->
+      <h2 class='text-2xl font-semibold mb-4'>Drip Coffee</h2>
+      <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8'>
+        <article class='bg-white rounded-lg shadow-md p-4 transition-all duration-300 hover:scale-[1.03] hover:shadow-xl'>
+          <div class='flex items-center justify-between mb-2'>
+            <h3 class='font-semibold'>House Drip</h3>
+            <span class='text-sm font-medium'>$3.00</span>
+          </div>
+          <p class='text-sm text-gray-600'>Medium roast, clean finish, balanced sweetness.</p>
+        </article>
+        <article class='bg-white rounded-lg shadow-md p-4 transition-all duration-300 hover:scale-[1.03] hover:shadow-xl'>
+          <div class='flex items-center justify-between mb-2'>
+            <h3 class='font-semibold'>Columbia Drip</h3>
+            <span class='text-sm font-medium'>$3.50</span>
+          </div>
+          <p class='text-sm text-gray-600'>Bright acidity with chocolate notes.</p>
+        </article>
+        <article class='bg-white rounded-lg shadow-md p-4 transition-all duration-300 hover:scale-[1.03] hover:shadow-xl'>
+          <div class='flex items-center justify-between mb-2'>
+            <h3 class='font-semibold'>Vanilla Drip</h3>
+            <span class='text-sm font-medium'>$3.80</span>
+          </div>
+          <p class='text-sm text-gray-600'>Hints of vanilla and caramel sweetness.</p>
+        </article>
+      </div>
+
+      <!-- Espresso -->
+      <h2 class='text-2xl font-semibold mb-4'>Espresso</h2>
+      <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8'>
+        <article class='bg-white rounded-lg shadow-md p-4 transition-all duration-300 hover:scale-[1.03] hover:shadow-xl'>
+          <div class='flex items-center justify-between mb-2'>
+            <h3 class='font-semibold'>Espresso</h3>
+            <span class='text-sm font-medium'>$2.50</span>
+          </div>
+          <p class='text-sm text-gray-600'>Rich and bold shot, perfect on its own.</p>
+        </article>
+        <article class='bg-white rounded-lg shadow-md p-4 transition-all duration-300 hover:scale-[1.03] hover:shadow-xl'>
+          <div class='flex items-center justify-between mb-2'>
+            <h3 class='font-semibold'>Macchiato</h3>
+            <span class='text-sm font-medium'>$3.20</span>
+          </div>
+          <p class='text-sm text-gray-600'>Espresso with a kiss of milk foam.</p>
+        </article>
+        <article class='bg-white rounded-lg shadow-md p-4 transition-all duration-300 hover:scale-[1.03] hover:shadow-xl'>
+          <div class='flex items-center justify-between mb-2'>
+            <h3 class='font-semibold'>Cortado</h3>
+            <span class='text-sm font-medium'>$3.40</span>
+          </div>
+          <p class='text-sm text-gray-600'>Espresso balanced with steamed milk.</p>
+        </article>
+      </div>
+
+      <!-- Pastries -->
+      <h2 class='text-2xl font-semibold mb-4'>Pastries</h2>
+      <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <article class='bg-white rounded-lg shadow-md p-4 transition-all duration-300 hover:scale-[1.03] hover:shadow-xl'>
+          <div class='flex items-center justify-between mb-2'>
+            <h3 class='font-semibold'>Blueberry Muffin</h3>
+            <span class='text-sm font-medium'>$2.75</span>
+          </div>
+          <p class='text-sm text-gray-600'>Fresh blueberries, lemon zest, and a tender crumb.</p>
+        </article>
+        <article class='bg-white rounded-lg shadow-md p-4 transition-all duration-300 hover:scale-[1.03] hover:shadow-xl'>
+          <div class='flex items-center justify-between mb-2'>
+            <h3 class='font-semibold'>Croissant</h3>
+            <span class='text-sm font-medium'>$3.00</span>
+          </div>
+          <p class='text-sm text-gray-600'>Buttery layers, flaky and light.</p>
+        </article>
+        <article class='bg-white rounded-lg shadow-md p-4 transition-all duration-300 hover:scale-[1.03] hover:shadow-xl'>
+          <div class='flex items-center justify-between mb-2'>
+            <h3 class='font-semibold'>Cinnamon Scroll</h3>
+            <span class='text-sm font-medium'>$2.95</span>
+          </div>
+          <p class='text-sm text-gray-600'>Sweet, spiced swirls with glaze.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class='bg-gray-900 text-gray-200'>
+    <div class='max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8'>
+      <section aria-label='Brand & socials'>
+        <h3 class='text-xl font-semibold mb-2'>Shore Coffee</h3>
+        <p class='text-sm text-gray-400'>Cozy café by the sea with hand-crafted brews.</p>
+        <div class='flex space-x-3 mt-3'>
+          <a href='#' class='hover:brightness-110 transition-all duration-300'>IG</a>
+          <a href='#' class='hover:brightness-110 transition-all duration-300'>FB</a>
+          <a href='#' class='hover:brightness-110 transition-all duration-300'>X</a>
+        </div>
+      </section>
+      <section aria-label='Quick Links'>
+        <h4 class='font-semibold mb-2'>Quick Links</h4>
+        <ul class='space-y-2'>
+          <li><a href='index.html' class='transition-all duration-300 hover:brightness-110'>Home</a></li>
+          <li><a href='menu.html' class='transition-all duration-300 hover:brightness-110'>Menu</a></li>
+          <li><a href='about.html' class='transition-all duration-300 hover:brightness-110'>About</a></li>
+          <li><a href='contact.html' class='transition-all duration-300 hover:brightness-110'>Contact</a></li>
+        </ul>
+      </section>
+      <section aria-label='Newsletter'>
+        <h4 class='font-semibold mb-2'>Newsletter</h4>
+        <p class='text-sm text-gray-400'>Get updates on new brews and events.</p>
+        <form class='flex mt-2'>
+          <input type='email' placeholder='Your email' class='bg-white/10 border border-white rounded-l px-3 py-2 w-full text-white'>
+          <button class='bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-r transition-all duration-300'>Go</button>
+        </form>
+      </section>
+    </div>
+    <hr class='border-gray-700'>
+    <p class='text-center text-sm py-3'>© 2025 Shore Coffee. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('mobile-menu');
+    if (toggle && menu) { toggle.addEventListener('click', () => { menu.classList.toggle('hidden'); }); }
+
+    // Reveal-on-scroll for sections
+    const sections = document.querySelectorAll('section');
+    sections.forEach(s => { s.style.opacity = '0'; s.style.transform = 'translateY(20px)'; s.style.transition = 'all 0.6s ease-in-out'; });
+    const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) e.target.style.opacity = '1'; }); }, { threshold: 0.1 });
+    sections.forEach(s => obs.observe(s));
+  </script>
+</body>
+</html>
